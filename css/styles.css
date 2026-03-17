@@ -8,11 +8,37 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .hide {
     display: none;
+}
+
+.content-wrapper-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+.width {
+    width: 100%;
+}
+.alcoholic-drinks {
+    width: 45%;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffc3d2;
+    color:antiquewhite;
+}
+
+.soft-drinks {
+     width: 45%;
+    text-align: center;
+    padding: 20px;
+    background-color:#ffc3d2 ;
+
 }
 
 li {
