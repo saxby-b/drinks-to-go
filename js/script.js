@@ -11,6 +11,7 @@ const checkAge = function() {
     if(age < legalAge) {
         message.innerText = "Drinks To Go offers many soft drinks such as sodas.";
         softDrinks.classList.remove("hide");
+        softDrinks.classList.add("width");
     } else {
         message.innerText = "Drinks To Go has a large selection of acholic and non-alcoholic beverages."
         softDrinks.classList.remove("hide");
