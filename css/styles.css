@@ -31,6 +31,11 @@ body{
     padding: 20px;
     background-color: #ffc3d2;
     color:antiquewhite;
+    align-self: stretch;
+}
+
+.alcoholic-drinks li:hover, .soft-drinks li:hover {
+    background-color: #e1bde4;
 }
 
 .soft-drinks {
