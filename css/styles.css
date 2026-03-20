@@ -1,51 +1,51 @@
-body{
-    width: 100%;
-    background-color: #d4f3ff;
+body {
+  width: 100%;
+  background-color: #d4f3ff;
 }
 
 .content-wrapper {
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .content-wrapper-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
 }
 .width {
-    width: 100%;
+  width: 100%;
 }
 .alcoholic-drinks {
-    width: 45%;
-    text-align: center;
-    padding: 20px;
-    background-color: #ffc3d2;
-    color:antiquewhite;
-    align-self: stretch;
+  width: 45%;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffc3d2;
+  color: antiquewhite;
+  align-self: stretch;
 }
 
-.alcoholic-drinks li:hover, .soft-drinks li:hover {
-    background-color: #e1bde4;
+.alcoholic-drinks li:hover,
+.soft-drinks li:hover {
+  background-color: #e1bde4;
 }
 
 .soft-drinks {
-     width: 45%;
-    text-align: center;
-    padding: 20px;
-    background-color:#ffc3d2 ;
-
+  width: 45%;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffc3d2;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
