@@ -4,6 +4,7 @@ const question = document.querySelector(".question");
 const message = document.querySelector(".message");
 const softDrinks = document.querySelector(".soft-drinks");
 const alcoholicDrinks = document.querySelector(".alcoholic-drinks");
+const lemonade = document.querySelector(".lemonade");
 
 const checkAge = function () {
     const age = input.value;
@@ -22,4 +23,11 @@ const checkAge = function () {
     question.classList.add("hide");
 }
 
+const lemonadeList = function() {
+    softDrinks.innerHTML = `<li> Pink Lemonade </li>
+    <li> Raspberry Lemonade</li>
+    <li> Homemade Lemonade</li>`;
+}
+
 button.addEventListener("click", checkAge);
+lemonade.addEventListener("click", lemonadeList);
