@@ -5,6 +5,7 @@ const message = document.querySelector(".message");
 const softDrinks = document.querySelector(".soft-drinks");
 const alcoholicDrinks = document.querySelector(".alcoholic-drinks");
 const lemonade = document.querySelector(".lemonade");
+const juice = document.querySelector(".juice");
 
 const checkAge = function () {
     const age = input.value;
@@ -21,13 +22,24 @@ const checkAge = function () {
     input.classList.add("hide");
     button.classList.add("hide");
     question.classList.add("hide");
-}
+};
 
-const lemonadeList = function() {
+const lemonadeList = function(e) {
+    e.preventDefault();
     softDrinks.innerHTML = `<li> Pink Lemonade </li>
     <li> Raspberry Lemonade</li>
     <li> Homemade Lemonade</li>`;
-}
+};
+
+const juiceList = function(e) {
+    e.preventDefault();
+    softDrinks.innerHTML = `<li> Apple Juice </li>
+    <li> Orange Juice </li>
+    <li>Cranberry Juice </li>
+    <li> Grape Juice </li>
+    `;
+};
 
 button.addEventListener("click", checkAge);
 lemonade.addEventListener("click", lemonadeList);
+juice.addEventListener("click", juiceList);
