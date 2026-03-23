@@ -24,14 +24,14 @@ const checkAge = function () {
     question.classList.add("hide");
 };
 
-const lemonadeList = function(e) {
+const lemonadeList = function (e) {
     e.preventDefault();
     softDrinks.innerHTML = `<li> Pink Lemonade </li>
     <li> Raspberry Lemonade</li>
     <li> Homemade Lemonade</li>`;
 };
 
-const juiceList = function(e) {
+const juiceList = function (e) {
     e.preventDefault();
     softDrinks.innerHTML = `<li> Apple Juice </li>
     <li> Orange Juice </li>
