@@ -6,6 +6,7 @@ const softDrinks = document.querySelector(".soft-drinks");
 const alcoholicDrinks = document.querySelector(".alcoholic-drinks");
 const lemonade = document.querySelector(".lemonade");
 const juice = document.querySelector(".juice");
+const soda = document.querySelector(".soda");
 
 const checkAge = function () {
     const age = input.value;
@@ -40,6 +41,15 @@ const juiceList = function (e) {
     `;
 };
 
+const sodaList = function(e) {
+    e.preventDefault();
+    softDrinks.innerHTML = `<li> Lemon Soda </li>
+    <li> Cherry Soda </li>
+    <li> Orange Soda </li>
+    <li> Grape Soda </li>`;
+};
+
 button.addEventListener("click", checkAge);
 lemonade.addEventListener("click", lemonadeList);
 juice.addEventListener("click", juiceList);
+soda.addEventListener("click", sodaList);
