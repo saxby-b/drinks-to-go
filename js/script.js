@@ -41,7 +41,7 @@ const juiceList = function (e) {
     `;
 };
 
-const sodaList = function(e) {
+const sodaList = function (e) {
     e.preventDefault();
     softDrinks.innerHTML = `<li> Lemon Soda </li>
     <li> Cherry Soda </li>
