@@ -53,7 +53,7 @@ const sodaList = function (e) {
     <button class="button go-back" type="button" name="button">Go Back</button>`;
 };
 
-const goBack = function(e) {
+const goBack = function (e) {
     e.preventDefault();
     softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
           <li class="juice">juice</li>
