@@ -7,7 +7,7 @@ const alcoholicDrinks = document.querySelector(".alcoholic-drinks");
 const lemonade = document.querySelector(".lemonade");
 const juice = document.querySelector(".juice");
 const soda = document.querySelector(".soda");
-const goBackButton = document.querySelector(".button .go-back");
+//const goBackButton = document.querySelector(".button .go-back");
 
 const checkAge = function () {
     const age = input.value;
@@ -24,6 +24,15 @@ const checkAge = function () {
     input.classList.add("hide");
     button.classList.add("hide");
     question.classList.add("hide");
+};
+
+const goBack = function (e) {
+    e.preventDefault();
+    softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
+          <li class="juice">juice</li>
+          <li class="soda">soda</li>
+          <li>hot chocolate</li>
+          <li>chocolate milk</li>`;
 };
 
 const lemonadeList = function (e) {
@@ -49,21 +58,16 @@ const sodaList = function (e) {
     softDrinks.innerHTML = `<li> Lemon Soda </li>
     <li> Cherry Soda </li>
     <li> Orange Soda </li>
-    <li> Grape Soda </li>
-    <button class="button go-back" type="button" name="button">Go Back</button>`;
+    <li> Grape Soda </li> `;
+    const goBackButton = document.createElement("button");
+    goBackButton.classList.add("go-back");
+    goBackButton.innerText = "Go Back";
+    goBackButton.addEventListener("click", goBack);
 };
 
-const goBack = function (e) {
-    e.preventDefault();
-    softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
-          <li class="juice">juice</li>
-          <li class="soda">soda</li>
-          <li>hot chocolate</li>
-          <li>chocolate milk</li>`;
-};
 
 button.addEventListener("click", checkAge);
 lemonade.addEventListener("click", lemonadeList);
 juice.addEventListener("click", juiceList);
 soda.addEventListener("click", sodaList);
-goBackButton.addEventListener("click", goBack);
+//goBackButton.addEventListener("click", goBack);
