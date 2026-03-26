@@ -15,6 +15,9 @@ body {
   display: none;
 }
 
+.submit {
+  margin-top: 10px;
+}
 .content-wrapper-list {
   display: flex;
   justify-content: center;
