@@ -7,7 +7,9 @@ const alcoholicDrinks = document.querySelector(".alcoholic-drinks");
 const lemonade = document.querySelector(".lemonade");
 const juice = document.querySelector(".juice");
 const soda = document.querySelector(".soda");
+const hotChocolate = document.querySelector(".hot-chocolate");
 const goBackButton = document.querySelector(".button .go-back");
+
 
 const checkAge = function () {
     const age = input.value;
@@ -65,9 +67,19 @@ const sodaList = function (e) {
     goBackButton.addEventListener("click", goBack); */
 };
 
+const hotChocolateList = function(e) {
+    e.preventDefault();
+    softDrinks.innerHTML =  `<li> Regular Hot Chocolate </li>
+    <li> Hot Chocolate with Whipped Cream </li>
+    <li> Dark Hot Chocolate </li> 
+    <li> Caramelized Hot Chocolate </li>`
+
+};
+
 
 button.addEventListener("click", checkAge);
 lemonade.addEventListener("click", lemonadeList);
 juice.addEventListener("click", juiceList);
 soda.addEventListener("click", sodaList);
 goBackButton.addEventListener("click", goBack);
+hotChocolate.addEventListener("click", hotChocolateList);
