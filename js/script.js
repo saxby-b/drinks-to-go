@@ -68,16 +68,16 @@ const sodaList = function (e) {
     goBackButton.addEventListener("click", goBack); */
 };
 
-const hotChocolateList = function(e) {
+const hotChocolateList = function (e) {
     e.preventDefault();
-    softDrinks.innerHTML =  `<li> Regular Hot Chocolate </li>
+    softDrinks.innerHTML = `<li> Regular Hot Chocolate </li>
     <li> Hot Chocolate with Whipped Cream </li>
     <li> Dark Hot Chocolate </li> 
     <li> Caramelized Hot Chocolate </li>`
 
 };
 
-const milkList = function(e) {
+const milkList = function (e) {
     e.preventDefault();
     softDrinks.innerHTML = `<li> Whole Milk </li>
     <li> Chocolate Milk </li>
@@ -92,4 +92,4 @@ juice.addEventListener("click", juiceList);
 soda.addEventListener("click", sodaList);
 goBackButton.addEventListener("click", goBack);
 hotChocolate.addEventListener("click", hotChocolateList);
-milk.addEventListener("click", milkList );
+milk.addEventListener("click", milkList);
