@@ -8,6 +8,7 @@ const lemonade = document.querySelector(".lemonade");
 const juice = document.querySelector(".juice");
 const soda = document.querySelector(".soda");
 const hotChocolate = document.querySelector(".hot-chocolate");
+const milk = document.querySelector(".milk");
 const goBackButton = document.querySelector(".button .go-back");
 
 
@@ -76,6 +77,14 @@ const hotChocolateList = function(e) {
 
 };
 
+const milkList = function(e) {
+    e.preventDefault();
+    softDrinks.innerHTML = `<li> Whole Milk </li>
+    <li> Chocolate Milk </li>
+    <li> Strawberry Milk </li>
+    <li> 1% Milk </li>`;
+};
+
 
 button.addEventListener("click", checkAge);
 lemonade.addEventListener("click", lemonadeList);
@@ -83,3 +92,4 @@ juice.addEventListener("click", juiceList);
 soda.addEventListener("click", sodaList);
 goBackButton.addEventListener("click", goBack);
 hotChocolate.addEventListener("click", hotChocolateList);
+milk.addEventListener("click", milkList );
