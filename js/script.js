@@ -2,6 +2,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("button");
 const question = document.querySelector(".question");
 const message = document.querySelector(".message");
+const div = document.querySelector(".content-wrapper-list");
 const softDrinks = document.querySelector(".soft-drinks");
 const alcoholicDrinks = document.querySelector(".alcoholic-drinks");
 const lemonade = document.querySelector(".lemonade");
@@ -52,8 +53,12 @@ const juiceList = function (e) {
     <li> Orange Juice </li>
     <li>Cranberry Juice </li>
     <li> Grape Juice </li>
-    <button class="button go-back" type="button" name="button">Go Back</button>
     `;
+
+    const button = document.createElement("button");
+    button.innerText = "Go Back";
+    div.append(button);
+    
 };
 
 const sodaList = function (e) {
