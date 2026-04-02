@@ -58,7 +58,7 @@ const juiceList = function (e) {
     const button = document.createElement("button");
     button.innerText = "Go Back";
     div.append(button);
-    
+
 };
 
 const sodaList = function (e) {
