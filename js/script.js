@@ -10,7 +10,7 @@ const juice = document.querySelector(".juice");
 const soda = document.querySelector(".soda");
 const hotChocolate = document.querySelector(".hot-chocolate");
 const milk = document.querySelector(".milk");
-const goBackButton = document.querySelector(".button .go-back");
+//const goBackButton = document.querySelector(".button .go-back");
 
 
 const checkAge = function () {
@@ -37,6 +37,7 @@ const goBack = function (e) {
           <li class="soda">soda</li>
           <li>hot chocolate</li>
           <li>chocolate milk</li>`;
+   // button.classList.add("hide");
 };
 
 const lemonadeList = function (e) {
@@ -57,7 +58,9 @@ const juiceList = function (e) {
 
     const button = document.createElement("button");
     button.innerText = "Go Back";
+    button.classList.add("go-back");
     div.append(button);
+    button.addEventListener("click", goBack);
 
 };
 
@@ -91,10 +94,10 @@ const milkList = function (e) {
 };
 
 
+
 button.addEventListener("click", checkAge);
 lemonade.addEventListener("click", lemonadeList);
 juice.addEventListener("click", juiceList);
 soda.addEventListener("click", sodaList);
-goBackButton.addEventListener("click", goBack);
 hotChocolate.addEventListener("click", hotChocolateList);
 milk.addEventListener("click", milkList);
