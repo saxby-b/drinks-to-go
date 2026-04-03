@@ -37,7 +37,7 @@ const goBack = function (e) {
           <li class="soda">soda</li>
           <li>hot chocolate</li>
           <li>chocolate milk</li>`;
-   // button.classList.add("hide");
+    // button.classList.add("hide");
 };
 
 const lemonadeList = function (e) {
