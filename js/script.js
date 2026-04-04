@@ -48,7 +48,7 @@ const lemonadeList = function (e) {
     <button class="button go-back" type="button" name="button">Go Back</button>`;
 };
 
-const juiceList = function (e, goBackButton) {
+const juiceList = function (e) {
     e.preventDefault();
     softDrinks.innerHTML = `<li> Apple Juice </li>
     <li> Orange Juice </li>
@@ -60,7 +60,17 @@ const juiceList = function (e, goBackButton) {
     goBackbutton.innerText = "Go Back";
     goBackbutton.classList.add("go-back");
     div.append(goBackbutton);
-    goBackbutton.addEventListener("click", goBack);
+
+    const goBack = function (e) {
+    e.preventDefault();
+    softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
+          <li class="juice">juice</li>
+          <li class="soda">soda</li>
+          <li>hot chocolate</li>
+          <li>chocolate milk</li>`;
+    this.goBackButton.classList.add("hide");
+};
+ this.goBackButton.addEventListener("click", goBack); 
 
 };
 
@@ -70,10 +80,9 @@ const sodaList = function (e) {
     <li> Cherry Soda </li>
     <li> Orange Soda </li>
     <li> Grape Soda </li> `;
-    /*const goBackButton = document.createElement("button");
+    const goBackButton = document.createElement("button");
     goBackButton.classList.add("go-back");
     goBackButton.innerText = "Go Back";
-    goBackButton.addEventListener("click", goBack); */
 };
 
 const hotChocolateList = function (e) {
@@ -94,7 +103,7 @@ const milkList = function (e) {
 };
 
 
-const goBack = function (e, goBackButton) {
+/*const goBack = function (e, goBackButton) {
     e.preventDefault();
     softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
           <li class="juice">juice</li>
@@ -102,7 +111,7 @@ const goBack = function (e, goBackButton) {
           <li>hot chocolate</li>
           <li>chocolate milk</li>`;
     goBackButton.classList.add("hide");
-};
+}; */
 
 
 button.addEventListener("click", checkAge);
