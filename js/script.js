@@ -62,15 +62,15 @@ const juiceList = function (e) {
     div.append(goBackbutton);
 
     const goBack = function (e) {
-    e.preventDefault();
-    softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
+        e.preventDefault();
+        softDrinks.innerHTML = `  <li class="lemonade">lemonade</li>
           <li class="juice">juice</li>
           <li class="soda">soda</li>
           <li>hot chocolate</li>
           <li>chocolate milk</li>`;
-    this.goBackButton.classList.add("hide");
-};
- this.goBackButton.addEventListener("click", goBack); 
+        this.goBackButton.classList.add("hide");
+    };
+    this.goBackButton.addEventListener("click", goBack);
 
 };
 
